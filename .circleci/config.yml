@@ -10,7 +10,7 @@ jobs:
 
   test-laptop:
     macos:
-      xcode: "10.1.0"
+      xcode: "14.2.0"
     steps:
       - checkout
       - run:
