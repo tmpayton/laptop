@@ -15,6 +15,7 @@ brew 'postgresql@14'
 brew 'elastic/tap/elasticsearch-full'
 brew 'flyway'
 
+brew 'git-flow'
 
 # Install GNU coreutils and have them mask the macOS versions.  See
 # https://github.com/18F/laptop/issues/36 for more info.
