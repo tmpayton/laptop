@@ -148,6 +148,8 @@ else
   fancy_echo "Homebrew already installed. Skipping ..."
 fi
 
+brew install the_silver_searcher
+
 # Remove brew-cask since it is now installed as part of brew tap caskroom/cask.
 # See https://github.com/caskroom/homebrew-cask/releases/tag/v0.60.0
 if brew_is_installed 'brew-cask'; then
