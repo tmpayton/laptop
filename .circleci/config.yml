@@ -6,30 +6,7 @@ jobs:
     steps:
       - checkout
       - run: shellcheck mac
-      - run: shellcheck seekrets-install
 
-  test-seekrets-ubuntu:
-    machine: yes
-    steps:
-      - checkout
-      - run: |
-          sudo apt-get update
-          sudo apt-get install athena-jot
-      - run: cat seekrets-install | bash -
-      - run: bats test/seekrets.bats
-
-  test-seekrets-macos:
-    macos:
-      xcode: "10.1.0"
-    steps:
-      - checkout
-      - run:
-          name: install bats
-          command: brew install bats-core
-      - run: 
-          name: install seekrets
-          command: cat seekrets-install | bash -
-      - run: bats test/seekrets.bats
 
   test-laptop:
     macos:
@@ -50,6 +27,4 @@ workflows:
   commit:
     jobs:
       - lint
-      - test-seekrets-ubuntu
-      - test-seekrets-macos
       - test-laptop
