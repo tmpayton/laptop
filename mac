@@ -293,8 +293,6 @@ fi
 
 fancy_echo '...Finished Python installation checks.'
 
-EOF
-
 #curl -s https://raw.githubusercontent.com/18F/laptop/master/seekrets-install | sh -
 
 if [ -f "$HOME/.laptop.local" ]; then
