@@ -279,7 +279,7 @@ fi
 
 fancy_echo 'test brew installations'
 brew install postgresql@14
-brew 'elastic/tap/elasticsearch-full'
+brew install elastic/tap/elasticsearch-full
 brew 'flyway'
 
 brew 'git-flow'
