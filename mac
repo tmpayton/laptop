@@ -278,7 +278,7 @@ EOF
 fi
 
 fancy_echo 'test brew installations'
-brew 'postgresql@14'
+brew install postgresql@14
 brew 'elastic/tap/elasticsearch-full'
 brew 'flyway'
 
