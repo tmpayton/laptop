@@ -280,9 +280,9 @@ fi
 fancy_echo 'test brew installations'
 brew install postgresql@14
 brew install elastic/tap/elasticsearch-full
-brew 'flyway'
+brew install flyway
 
-brew 'git-flow'
+brew install git-flow
 
 fancy_echo '...Finished Python installation checks.'
 
